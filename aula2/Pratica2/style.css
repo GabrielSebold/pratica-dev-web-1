@@ -1,29 +1,70 @@
 #video {
     border-radius: 5px;
-    box-shadow: 5px 5px 20px black;
-    margin: auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-top: 10px;
 }
 
-#cassio {
-    width: auto;
-    height: 500px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 20px black;
-    justify-content: center;
+#video:hover {
+    transform: scale(1.05);
 }
+
+p, h3, h4, li {
+    text-align: left;
+}
+
+.zoom {
+  width: auto;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.zoom img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.zoom img:hover {
+  transform: scale(1.1);
+}
+
 
 audio {
-    justify-content: center;
+    margin-top: 10px;
+    transition: transform 0.4s ease;
+}
+
+audio:hover {
+    transform: scale(1.05);
 }
 
 main {
-    max-width: 700px;
-    margin: auto;
-    background-color: antiquewhite;
-    padding: 15px;
-    border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  max-width: 700px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("https://i.pinimg.com/736x/7f/1e/99/7f1e992bff46e047ea1b487140e9db99.jpg")
+              center/cover no-repeat;
+  opacity: 0.55;
+  z-index: -1;
 }
 
 body {
-    background-color: whitesmoke;
+    background-image: url("https://www.hdwallpapers.in/download/ferrari_f1_75_2022_formula_1_2_4k_5k_hd_cars-HD.jpg");
+    background-size: cover;
+    color: white;
 }
