@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Papai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="pessoa.php" method="post">
+            <fieldset class="pessoal">
+                <legend>Informações Pessoais</legend>
+                <label for="Nome">Nome: </label>
+                <input type="text" name="Nome" id="Nome" required maxlength="100" placeholder="Nome"><br>
+                <label for="Sobrenome">Sobrenome: </label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required maxlength="100" placeholder="Sobrenome"><br>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" required placeholder="exemplo@email.com"><br>
+                <label for="date">Data de Nascimento: </label>
+                <input type="date" name="date" min="01/01/1920" max="01/01/2024"><br>
+                <label for="sexo">Sexo: </label><br>
+                <input type="radio" name="sexo" id="Masculino" value="Masculino">
+                <label for="Masculino"> Masculino</label><br>
+                <input type="radio" name="sexo" id="Feminino" value="Feminino">
+                <label for="Feminino"> Feminino</label>
+            </fieldset>
+            <fieldset class="endereco">
+                <legend>Endereço</legend>
+                <label for="endereco">Endereço: </label>
+                <input type="text" id="endereco" name="endereco"><br>
+                <label for="cep">CEP: </label>
+                <input type="text" id="cep" name="cep"><br>
+            </fieldset>
+            <fieldset class="adicional">
+                <legend>Informações Adicionais</legend>
+                <label for="cor">Cor Favorita: </label>
+                <input type="color" name="cor" id="cor"><br>
+                <label for="estado">Estado(UF): </label>
+                <select name="estado" id="estado">
+                    <option value="" selected disabled>Selecione...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </fieldset>
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

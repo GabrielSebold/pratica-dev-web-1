@@ -1,0 +1,16 @@
+main {
+    margin: auto;
+    width: 75%;
+}
+
+
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.botoes button {
+    width: 15%;
+}
