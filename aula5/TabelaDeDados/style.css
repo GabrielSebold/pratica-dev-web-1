@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 4px;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+button {
+  padding: 2px 5px;
+  margin: 2px;
+}

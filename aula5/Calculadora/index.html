@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calc">
+    <h1>Calculadora</h1>
+
+    <input id="valor1" type="number" placeholder="Valor 1" />
+    <select id="operador">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <input id="valor2" type="number" placeholder="Valor 2" />
+
+    <div class="row">
+      <button id="calcBtn" type="button">Calcular</button>
+      <button id="clearBtn" type="button">Limpar</button>
+    </div>
+
+    <div id="resultado" aria-live="polite">😊</div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
